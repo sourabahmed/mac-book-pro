@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-Book</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row mt-5">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-6">
+                    <img class="img-fluid" src="images/mac.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-6 px-5">
+            <div class="title">
+                <h2>Customize your Blue 24-inch iMac with Apple M1 chip</h2>
+                <p>Apple m1 chip with 8 core CPU with 4 performance cores and 4 efficiency core 7 core GPU and 16 core neural Engine 8 GB unigfied memory 256 gb ssd storage Two thunderbolt/ USB 4 port Magic Mouse Magic keyboard English</p>
+            </div>
+            <div class="information">
+                <!-- meomry section -->
+                <h6 class="fw-bold mt-4">Memory</h6>
+                <button id="general-memory-button" type="button" class="btn btn-light btn-outline-dark">8 GB unified memory</button>
+                <button id="update-memory-button" type="button" class="btn btn-light btn-outline-dark">16 GB unified memory</button>
+                <!-- storage-section -->
+                <h6 class="fw-bold mt-4">Storage</h6>
+                <button id="storage-first" type="button" class="btn btn-light btn-outline-dark">256 GB SSD storage</button>
+                <button id="storage-second" type="button" class="btn btn-light btn-outline-dark">512 GB SSD storage</button>
+                <button id="storage-third" type="button" class="btn btn-light btn-outline-dark">1TB GB SSD storage</button>
+                <!-- delivery-section -->
+                <h6 class="fw-bold mt-4">Chose your delivery option</h6>
+                <button id="delivery-first" type="button" class="btn btn-light btn-outline-dark">Friday, August 25 free delivery </button>
+                <button id="delivery-second" type="button" class="btn btn-light btn-outline-dark">Sunday, August 21 delivery cost $20</button>
+            </div>
+            <div class="total">
+                <table class="table mt-4">
+                    <tr>
+                        <th>Best Price</th>
+                        <th>$<span id="best-price">1299</span></th>
+                    </tr>
+                    <tr>
+                        <th>Extra Memory Cost</th>
+                        <th>$<span id="update-memory">0</span></th>
+                    </tr>
+                    <tr>
+                        <th>Extra Storage Cost</th>
+                        <th>$<span id="update-storage">0</span></th>
+                    </tr>
+                    <tr>
+                        <th>Delivery Charge</th>
+                        <th>$<span id="update-delivery">0</span></th>
+                    </tr>
+                    <tr class="text-danger">
+                        <th>Total price</th>
+                        <th>$<span id ="total-price">1299</span></th>
+                    </tr>
+                </table>
+                <!-- <p>Add promo code</p>
+                <input type="text">
+                <button class="btn btn-danger"></button> -->
+            </div>
+            <div>               
+                <p>Add promo code</p>
+                <input id="promo-input" class="p-1" type="text">
+                <button id="promo-button" class="btn btn-danger">Apply</button>
+            </div>
+        </div>
+        <hr class="my-2">
+        <h3 class="text-center mb-4">Total After promo code: $<span id="promo-price">1299</span></h3>
+    </div>
+    <!-- javascript added -->
+    <script src="script.js"></script>
+</body>
+</html>
